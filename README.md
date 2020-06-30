@@ -22,7 +22,7 @@ docker restart 容器id
 如果你第一次开启数据库，请运行
 
 ```bash 
-docker run -v morney-rails-1-data:/var/lib/postgresql/data -p 5001:5432 -e POSTGRES_USER=fang -e POSTGRES_PASSWORD=123456  -d postgres:12.2
+docker run -v morney-rails-1-data:/var/lib/postgresql/data -p 5002:5432 -e POSTGRES_USER=fang -e POSTGRES_PASSWORD=123456  -d postgres:12.2
 ```
 其中 
 
