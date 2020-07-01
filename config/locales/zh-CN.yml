@@ -1,0 +1,11 @@
+zh-CN:
+  activerecord:
+    errors:
+      models:
+        user:
+          attributes:
+            email:
+              blank: 邮箱不能为空
+            password:
+              blank: 密码不能为空
+              too_short: 密码长度不能少于6个字符
