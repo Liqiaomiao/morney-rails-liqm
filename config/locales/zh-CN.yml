@@ -9,3 +9,5 @@ zh-CN:
             password:
               blank: 密码不能为空
               too_short: 密码长度不能少于6个字符
+            password_confirmation:
+                  confirmation: 两次密码不匹配
