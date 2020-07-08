@@ -5,6 +5,7 @@ zh-CN:
         user:
           attributes:
             email:
+              taken: 邮箱已被占用
               blank: 邮箱不能为空
             password:
               blank: 密码不能为空
