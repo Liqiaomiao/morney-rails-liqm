@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   get '/hello', to: 'first#hello'
   get '/hi', to: 'first#hi'
-  resource:users
+  resources :users
+  resources :sessions
 end
