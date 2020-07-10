@@ -1,6 +1,11 @@
 class SessionsController < ApplicationController
   def create
-    head 444
+    s = Session.new create_params
+    s.validate
+    render_resource s
+  end
+  def create_params
+    params.permit(:email, :password)
   end
   def destory
 

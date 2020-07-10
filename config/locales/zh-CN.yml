@@ -1,4 +1,12 @@
 zh-CN:
+  activemodel:
+    errors:
+      models:
+        session:
+          attributes:
+            email:
+              blank: 邮箱不能为空
+              not_found: 邮箱不存在
   activerecord:
     errors:
       models:
