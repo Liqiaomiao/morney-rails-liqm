@@ -7,6 +7,8 @@ zh-CN:
             email:
               blank: 邮箱不能为空
               not_found: 邮箱不存在
+            password:
+              not_match: 密码不匹配
   activerecord:
     errors:
       models:
