@@ -6,8 +6,6 @@ class UsersController < ApplicationController
     params.permit(:email,:password, :password_confirmation)
   end
   def me
-    user_id = session[:current_user_id]
-    user  = User.find_by_id user_id
-    render_resource user
+    render_resource current_user
   end
 end
