@@ -8,7 +8,8 @@ class SessionsController < ApplicationController
   def create_params
     params.permit(:email, :password)
   end
-  def destory
-
+  def destroy
+    session[:current_user_id] = nil
+    head :ok
   end
 end
