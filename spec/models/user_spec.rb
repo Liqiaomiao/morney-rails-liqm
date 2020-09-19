@@ -10,7 +10,7 @@ RSpec.describe User, type: :model do
       user = User.create email: 'lisa@qq.com', password: '123456', password_confirmation: '123456'
       expect{
         User.destroy_by id: user.id
-      }.to change {User.count}.from(1).to(0)
+      }.to change {User.count}.by(-1)
     end
     it 'Email is required when creating' do
       user = User.create email: ''
