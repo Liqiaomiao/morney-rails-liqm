@@ -21,5 +21,13 @@ RSpec.describe User, type: :model do
       user =  User.create email: 'lisa@qq.com', password: '123456', password_confirmation: '123456'
       expect(user.errors.details[:email][0][:error]).to eq(:taken)
     end
+    it 'Email to users after created' do
+      x = spy('xxx')
+      allow(UserMailer).to receive(:welcome_email).and_return(x)
+      User.create! email: '1@qq.com', password: '123456', password_confirmation: '123456'
+      expect(UserMailer).to have_received(:welcome_email)
+      expect(x).to have_received(:deliver_now)
+
+    end
   end
 end
