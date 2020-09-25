@@ -17,8 +17,11 @@ zh-CN:
             email:
               taken: 邮箱已被占用
               blank: 邮箱不能为空
+              invalid: 请填写正确的邮箱
             password:
               blank: 密码不能为空
               too_short: 密码长度不能少于6个字符
             password_confirmation:
+                  blank: 请填写确认密码
                   confirmation: 两次密码不匹配
+
