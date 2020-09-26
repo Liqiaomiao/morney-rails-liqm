@@ -47,3 +47,8 @@ bin/rails db:create
 ```bash
 bin/rails s
 ```
+## 自动生成文档
+```bash
+rake docs:generate
+open doc/api/index.html
+```
